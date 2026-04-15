@@ -27,13 +27,16 @@ export function EmptyContactsState({ searchQuery }: EmptyContactsStateProps) {
             >
               <UsersIcon className="h-16 w-16 text-yellow-400 mx-auto mb-4" />
             </motion.div>
-            <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               No contacts found
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-2 text-lg">
               {searchQuery
-                ? "Try adjusting your search"
+                ? "Try adjusting your search filters or criteria"
                 : "Get started by adding your first contact"}
+            </p>
+            <p className="text-gray-500 text-sm mb-6">
+              Build and manage your professional network effectively
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button size="lg" className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold">
