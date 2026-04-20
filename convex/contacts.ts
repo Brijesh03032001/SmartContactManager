@@ -2,6 +2,11 @@ import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { auth } from "./auth";
 
+/**
+ * Contact Management API
+ * Handles CRUD operations for contacts with user authentication
+ */
+
 // Create a new contact
 export const createContact = mutation({
   args: {
