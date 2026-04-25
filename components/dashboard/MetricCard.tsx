@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { LucideIcon } from "lucide-react";
@@ -14,7 +15,7 @@ interface MetricCardProps {
   index: number;
 }
 
-export function MetricCard({ title, value, icon: Icon, change, color, index }: MetricCardProps) {
+export const MetricCard = memo(function MetricCard({ title, value, icon: Icon, change, color, index }: MetricCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
